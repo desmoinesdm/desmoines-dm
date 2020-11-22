@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    background-color: #252B40;
+    background-color: #fff;
     color: #fff;
 }
 
@@ -46,7 +46,7 @@ h1, h2, h3 {
 }
 
 .primary-color {
-    color: #fff;
+    color: #252B40;
 }
 
 .shadow {
@@ -176,6 +176,11 @@ h1, h2, h3 {
     font-size: 1.5rem;
 }
 
+.hd {
+    bottom: 355px;
+}
+
+
 .heading-text {
     margin: 20px 0;
 }
@@ -209,7 +214,7 @@ h1, h2, h3 {
 .icons {
     font-size: 40px;
     margin: 20px 10px 35px 0;
-    color: #2f55d4;
+    color: #252B40;
 }
 
 .row-one {
@@ -218,7 +223,8 @@ h1, h2, h3 {
 }
 
 .row-port {
-    /* background-color: #f8f9fc; */
+    /* background-color: #fafbfc; */
+    background-color: #252B40;
 }
 
 .skills {
@@ -233,6 +239,15 @@ h1, h2, h3 {
     background-color: #252B40;
     color: white;
     margin-right: 20px;
+}
+
+.shd {
+    bottom: 335px;
+}
+
+.slogan {
+    width: 208px;
+    bottom: 200px;
 }
 
 .tooltip {
