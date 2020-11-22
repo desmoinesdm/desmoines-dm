@@ -58,21 +58,19 @@ h1, h2, h3 {
 }
 
 .desktop-dn {
-    display: flex;
-}
-
-.mobile-dn {
     display: none;
 }
 
+.mobile-dn {
+    display: flex;
+}
+
 @media(max-width: 900px) {
-    .desktop-dn {
+    .mobile-dn {
         display: none;
     }
-    .mobile-dn {
+    .desktop-dn {
         display: flex;
-        justify-content: center;
-        align-items: center;
     }
 }
 
@@ -215,7 +213,7 @@ h1, h2, h3 {
 
 .headline-text {
     font-size: 30px;
-    padding: 5% 0 0 10%;
+    padding: 5% 0 0 23%;
 }
 
 .icons {
@@ -272,11 +270,12 @@ h1, h2, h3 {
     .contact-text {
         font-size: 1.35rem;
     }
-    .profile-img {
-        display: none;
-    }
     .row-one {
         height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
     }
     .skills-cont {
         margin-bottom: 10px;
