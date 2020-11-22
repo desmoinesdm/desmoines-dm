@@ -134,15 +134,18 @@ h1, h2, h3 {
     color: #252B40;
 }
 
+@media(max-width: 991px) {
+    .header-right-cont {
+        display: none !important;
+    }
+}
+
 @media(max-width: 900px) {
     #header .container {
         padding: 10px 25px;
     }
     .header-cont {
         padding: 10px;
-    }
-    .header-right-cont {
-        display: none !important;
     }
     .navbar {
         padding: 0;
