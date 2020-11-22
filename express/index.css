@@ -1,0 +1,280 @@
+/* Global CSS */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #252B40;
+    color: #fff;
+}
+
+a, a:hover {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.absolute-top-left {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.btn-primary {
+    font-size: 16px;
+    margin-left: 15px;
+    background-color:  #252B40;
+    box-shadow: 0 3px 5px 0 #252B40;
+    border-color: #252B40;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-weight: 900;
+    margin-left: -1.5px;
+}
+
+.ls-1 {
+    letter-spacing: .83px;
+}
+
+.primary-color {
+    color: #fff;
+}
+
+.shadow {
+    box-shadow: 0 0 3px rgba(22,28,45,.15)!important;
+}
+
+.rounded {
+    border-radius: 6px;
+}
+
+.mobile-dn {
+    display: none;
+}
+
+@media(max-width: 900px) {
+    .mobile-dn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Other CSS */
+
+/* Header */
+
+#header {
+    background-color:  #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.header-box-shadow {
+    box-shadow: 0 0 16px rgba(22,28,45,.15);
+    display: flex !important;
+}
+
+.header-cont {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#header-logo {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.header-right-cont {
+    align-items: center;
+}
+
+.header-right-text {
+    color:#252B40;
+    font-size: 13px;
+    background-color: transparent!important;
+    letter-spacing: 1px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 900;
+    transition: all .5s;
+    font-family: "Nunito",sans-serif;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-shadow: 0px 0px 0.5px #3c4858;
+}
+
+.fa-1x {
+    font-size: 1.5rem;
+}
+.navbar-toggler.toggler-example {
+    cursor: pointer;
+}
+.dark-blue-text {
+    color:#252B40;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #252B40;
+}
+
+@media(max-width: 900px) {
+    #header .container {
+        padding: 10px 25px;
+    }
+    .header-cont {
+        padding: 10px;
+    }
+    .header-right-cont {
+        display: none !important;
+    }
+    .navbar {
+        padding: 0;
+        text-align: right;
+        align-items: flex-end;
+        flex-direction: column;
+        text-align: right;
+    }
+}
+
+/* End of Header */
+
+/* Body */
+
+.anchor-tag {
+    height: 12vh;
+}
+
+.card {
+    background: #fff;
+    cursor: pointer;
+}
+.card:hover {
+    transition: transform .8s;
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(60,72,88,.15)!important;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 25px;
+}
+
+.contact {
+    font-size: 1.5rem;
+}
+
+.heading-text {
+    margin: 20px 0;
+}
+
+.heading-text-align-center {
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.headline-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 30%;
+}
+
+.headline-img {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    object-position: 100% 0%;
+}
+
+.headline-text {
+    font-size: 30px;
+    padding: 5% 0 0 10%;
+}
+
+.icons {
+    font-size: 40px;
+    margin: 20px 10px 35px 0;
+    color: #2f55d4;
+}
+
+.row-one {
+    height:100vh;
+    align-items: center;
+}
+
+.row-port {
+    /* background-color: #f8f9fc; */
+}
+
+.skills {
+    height: 64px;
+    width: 64px;
+    border: 1px solid #e9ecef;
+    border-radius: 90%;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #252B40;
+    color: white;
+    margin-right: 20px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+@media(max-width: 900px) {
+    .contact {
+        font-size: 1.5rem;
+        justify-content: left !important;
+        margin-bottom: 20px;
+    }
+    .contact-text {
+        font-size: 1.35rem;
+    }
+    .desktop-dn {
+        display: none;
+    }
+    .profile-img {
+        display: none;
+    }
+    .row-one {
+        height: 100vh;
+    }
+    .skills-cont {
+        margin-bottom: 10px;
+    }
+    .skills {
+        height: 50px;
+        width: 50px;
+        font-size: 25px;
+    }
+}
+
+/* End of Body */
+
+/* Footer */
+
+footer {
+    height: 10vh;
+}
+
+/* End of Footer */
