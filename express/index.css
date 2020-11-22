@@ -57,11 +57,18 @@ h1, h2, h3 {
     border-radius: 6px;
 }
 
+.desktop-dn {
+    display: flex;
+}
+
 .mobile-dn {
     display: none;
 }
 
 @media(max-width: 900px) {
+    .desktop-dn {
+        display: none;
+    }
     .mobile-dn {
         display: flex;
         justify-content: center;
@@ -264,9 +271,6 @@ h1, h2, h3 {
     }
     .contact-text {
         font-size: 1.35rem;
-    }
-    .desktop-dn {
-        display: none;
     }
     .profile-img {
         display: none;
