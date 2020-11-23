@@ -4,7 +4,7 @@ window.onload = function() {
     var header = document.getElementById("header");
     var adj = document.querySelectorAll(".adj");
     function addHeaderBorder() {
-        if (window.pageYOffset > 200) {
+        if (window.pageYOffset > 300) {
             header.classList.add("header-box-shadow");
             adj.forEach(e => e.classList.add("adjust"));
         } else {
