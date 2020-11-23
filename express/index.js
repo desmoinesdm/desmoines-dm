@@ -2,11 +2,14 @@ window.onload = function() {
     // header bottom border function
     window.onscroll = function() { addHeaderBorder() };
     var header = document.getElementById("header");
+    var adj = document.querySelectorAll(".adj");
     function addHeaderBorder() {
-        if (window.pageYOffset > 50) {
+        if (window.pageYOffset > 200) {
             header.classList.add("header-box-shadow");
+            adj.forEach(e => e.classList.add("adjust"));
         } else {
             header.classList.remove("header-box-shadow");
+            adj.forEach(e => e.classList.remove("adjust"));
         }
     }
 

@@ -13,6 +13,10 @@ a, a:hover {
     color: inherit;
 }
 
+.adjust {
+    margin-bottom: -70px !important;
+}
+
 .absolute {
     position: absolute;
 }
@@ -25,10 +29,15 @@ a, a:hover {
 
 .btn-primary {
     font-size: 16px;
-    margin-left: 15px;
-    background-color:  #252B40;
+    background-color:  #c53a40;
     box-shadow: 0 3px 5px 0 #252B40;
-    border-color: #252B40;
+    border: 0;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color:  #902b30 !important;
+    border: 0 !important;
+    box-shadow: 0 3px 5px 0 #252B40 !important;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -46,6 +55,10 @@ h1, h2, h3 {
 }
 
 .primary-color {
+    color: #c53a40;
+}
+
+.secondary-color {
     color: #252B40;
 }
 
@@ -121,6 +134,10 @@ h1, h2, h3 {
     text-shadow: 0px 0px 0.5px #3c4858;
 }
 
+.header-right-last {
+    margin-right: 15px;
+}
+
 .fa-1x {
     font-size: 1.5rem;
 }
@@ -185,7 +202,8 @@ h1, h2, h3 {
 }
 
 .hd {
-    bottom: 355px;
+    bottom: 50px;
+    left: 15px;
 }
 
 
@@ -205,6 +223,7 @@ h1, h2, h3 {
     justify-content: center;
     position: absolute;
     top: 30%;
+    padding: 5% 0 0 23%;
 }
 
 .headline-img {
@@ -216,7 +235,7 @@ h1, h2, h3 {
 
 .headline-text {
     font-size: 30px;
-    padding: 5% 0 0 23%;
+    margin-bottom: 10px;
 }
 
 .icons {
@@ -250,12 +269,18 @@ h1, h2, h3 {
 }
 
 .shd {
-    bottom: 335px;
+    bottom: 30px;
+    left: 15px;
 }
 
 .slogan {
     width: 208px;
-    bottom: 200px;
+    bottom: 300px;
+}
+
+.slogan-button {
+    width: 208px;
+    bottom: 250px;
 }
 
 .tooltip {
