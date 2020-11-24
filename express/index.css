@@ -89,6 +89,14 @@ h1, h2, h3 {
     color: #D14243;
 }
 
+.rounded {
+    border-radius: 6px;
+}
+
+.sandwich {
+    color: #134D5C;
+}
+
 .sec-color {
     /* color: #140814; */
     color: #134D5C;
@@ -98,8 +106,8 @@ h1, h2, h3 {
     box-shadow: 0 0 3px rgba(22,28,45,.15)!important;
 }
 
-.rounded {
-    border-radius: 6px;
+.text-ac {
+    text-align: center;
 }
 
 ul li {
@@ -353,6 +361,12 @@ ul li {
         height: 50px;
         width: 50px;
         font-size: 25px;
+    }
+    .wwo-row {
+        padding: 30px;
+    }
+    .wwo-row-img {
+        margin-top: 0;
     }
 }
 
