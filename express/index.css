@@ -28,6 +28,10 @@ a, a:hover {
     left: 30px;
 }
 
+.btn {
+    text-transform: uppercase;
+}
+
 .btn-primary {
     font-size: 16px;
     background-color:  #134D5C;
@@ -61,6 +65,15 @@ a, a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.col-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.col-padding {
+    padding: 70px;
 }
 
 .desktop-dn {
@@ -98,7 +111,6 @@ h1, h2, h3 {
 }
 
 .sec-color {
-    /* color: #140814; */
     color: #134D5C;
 }
 
@@ -110,21 +122,29 @@ h1, h2, h3 {
     text-align: center;
 }
 
+.third-color {
+    color: #140814;
+}
+
 ul li {
     margin-bottom: 10px;
 }
 
 
 @media(max-width: 900px) {
-    .mobile-dn {
-        display: none;
+    a {
+        scroll-margin-top: 70px;
     }
     .desktop-dn {
         display: flex;
     }
-    a {
-        scroll-margin-top: 70px;
+    .mobile-dn {
+        display: none;
     }
+    .col-padding {
+        padding: 50px 15px !important;
+    }
+    
 }
 
 /* Other CSS */
@@ -313,12 +333,12 @@ ul li {
 }
 
 .slogan {
-    width: 208px;
+    width: 241px;
     bottom: 290px;
 }
 
 .slogan-button {
-    width: 208px;
+    width: 250px;
     bottom: 240px;
 }
 
@@ -330,12 +350,20 @@ ul li {
 
 .wwo-row {
     background-color: #134D5C;
-    padding: 70px;
 }
 
 .wwo-row-img {
     margin-top: -60px;
     max-height: 73vh;
+}
+
+.wwa-row {
+    background-color: #fff;
+}
+
+.wwa-row-img {
+    max-height: 70vh;
+    border-radius: 8px;
 }
 
 @media(max-width: 900px) {
@@ -361,9 +389,6 @@ ul li {
         height: 50px;
         width: 50px;
         font-size: 25px;
-    }
-    .wwo-row {
-        padding: 30px;
     }
     .wwo-row-img {
         margin-top: 0;
