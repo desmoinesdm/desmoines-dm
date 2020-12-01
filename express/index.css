@@ -155,7 +155,7 @@ ul li {
     background-color:  #fff;
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 100;
 }
 
 .header-box-shadow {
@@ -304,7 +304,7 @@ ul li {
     color: #140814;
 }
 
-.phone-white {
+.phone {
     height: 35%;
     min-height: 250px;
     width: 17.5%;
@@ -319,29 +319,26 @@ ul li {
     z-index: 15;
 }
 
-.tablet-black {
+.tablet {
     height: 50%;
     min-height: 350px;
     width: 25%;
     min-width: 350px;
-    /* background-color: #140814; */
     background-color: #fff;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
     margin-bottom: -70px;
     bottom: 0;
     left: 250px;
-    /* box-shadow: 1px -2px 2px #140814; */
     box-shadow: 3px -2px 5px -5px #0a4249;
     z-index: 10;
 }
 
-.laptop-red {
+.laptop {
     height: 70%;
     min-height: 450px;
     width: 35%;
     min-width: 700px;
-    /* background-color: #D14243; */
     background-color: #fff;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
@@ -431,6 +428,22 @@ ul li {
         align-items: center;
 
     }
+    .phone {
+        width: 100px;
+        min-width: 0;
+        height: 120px;
+        min-height: 0;
+        left: 0;
+        margin-bottom: -51px;
+    }
+    .laptop {
+        width: 320px;
+        min-width: 0;
+        height: 215px;
+        min-height: 0;
+        left: 50px;
+        margin-bottom: -51px;
+    }
     .skills-cont {
         margin-bottom: 10px;
     }
@@ -438,6 +451,9 @@ ul li {
         height: 50px;
         width: 50px;
         font-size: 25px;
+    }
+    .wwo-row {
+        min-height: 450px;
     }
     .wwo-row-img {
         margin-top: 0;
