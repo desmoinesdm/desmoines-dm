@@ -131,7 +131,7 @@ ul li {
 }
 
 
-@media(max-width: 900px) {
+@media(max-width: 700px) {
     a {
         scroll-margin-top: 70px;
     }
@@ -217,7 +217,7 @@ ul li {
     }
 }
 
-@media(max-width: 900px) {
+@media(max-width: 700px) {
     #header .container {
         padding: 10px 25px;
     }
@@ -317,6 +317,7 @@ ul li {
     left: 50px;
     box-shadow: 3px -2px 5px -5px #0a4249;
     z-index: 15;
+    overflow: hidden;
 }
 
 .tablet {
@@ -332,6 +333,7 @@ ul li {
     left: 250px;
     box-shadow: 3px -2px 5px -5px #0a4249;
     z-index: 10;
+    overflow: hidden;
 }
 
 .laptop {
@@ -347,6 +349,7 @@ ul li {
     right: 50px;
     box-shadow: 1px -2px 2px #0a4249;
     z-index: 5;
+    overflow: hidden;
 }
 
 .row-one {
@@ -412,7 +415,7 @@ ul li {
     border-radius: 8px;
 }
 
-@media(max-width: 900px) {
+@media(max-width: 700px) {
     .contact {
         font-size: 1.5rem;
         justify-content: left !important;
@@ -436,12 +439,20 @@ ul li {
         left: 0;
         margin-bottom: -51px;
     }
+    .tablet {
+        width: 150px;
+        min-width: 0;
+        height: 170px;
+        min-height: 0;
+        left: 30px;
+        margin-bottom: -51px;
+    }
     .laptop {
         width: 320px;
         min-width: 0;
-        height: 215px;
+        height: 225px;
         min-height: 0;
-        left: 50px;
+        right: 0;
         margin-bottom: -51px;
     }
     .skills-cont {
@@ -453,10 +464,13 @@ ul li {
         font-size: 25px;
     }
     .wwo-row {
-        min-height: 450px;
+        min-height: 400px;
     }
     .wwo-row-img {
         margin-top: 0;
+    }
+    .wwo-h4 {
+        font-size: 1.2rem;
     }
 }
 
