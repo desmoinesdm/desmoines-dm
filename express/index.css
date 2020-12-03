@@ -370,8 +370,8 @@ ul li {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #D14243;
-    color: white;
+    background-color: #fff;
+    color: #134D5C;
     margin-right: 20px;
 }
 
@@ -399,6 +399,41 @@ ul li {
 .wwo-row {
     min-height: 650px;
     background-color: #134D5C;
+}
+
+.wwo-icons-cont {
+    height: 100px;
+    width: 100px;
+    padding: 20px;
+    border: 1px solid #e9ecef;
+    border-radius: 90%;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #134D5C;
+    margin: 20px 0 10px;
+}
+
+.wwo-icon-1 {
+    margin: 20px 15px 5px 22px;
+}
+
+.wwo-icon-2 {
+    margin: -20px -14px -20px -10px;
+    height: 76px;
+    width: 76px;
+}
+
+.wwo-icon-3 {
+    height: 55px;
+    margin-left: 13px;
+}
+
+.wwo-icon-4 {
+    height: 70px;
+    width: 70px;
 }
 
 .wwo-row-img {
