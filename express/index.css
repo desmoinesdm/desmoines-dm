@@ -72,6 +72,13 @@ a, a:hover {
     flex-direction: column;
 }
 
+.col-flex-sb {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .col-padding {
     padding: 70px;
 }
@@ -399,6 +406,7 @@ ul li {
 .wwo-row {
     min-height: 650px;
     background-color: #134D5C;
+    border: 1px solid #134D5C;
 }
 
 .wwo-icons-cont {
