@@ -406,7 +406,7 @@ ul li {
 .wwo-row {
     min-height: 650px;
     background-color: #134D5C;
-    border: 1px solid #134D5C;
+    /* border: 1px solid #134D5C; */
 }
 
 .wwo-icons-cont {
