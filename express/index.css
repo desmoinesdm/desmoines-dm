@@ -119,6 +119,7 @@ h1, h2, h3 {
 
 .sec-color {
     color: #134D5C;
+    /* color: #3269A1; */
 }
 
 .shadow {
@@ -403,10 +404,44 @@ ul li {
     border-bottom: 1px dotted black;
 }
 
+.url {
+    height: 20%;
+    min-height: 100px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 180px;
+    padding: 20px;
+    margin-top: 120px;
+    box-shadow: 1px -2px 2px #0a4249;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+}
+
+.lock {
+    height: 40px;
+    margin-left: 20px;
+    animation: bounce 0.35s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    from { transform: translate3d(0, 0, 0);     }
+    to   { transform: translate3d(0, -20px, 0); }
+}
+
 .wwo-row {
     min-height: 650px;
     background-color: #134D5C;
     /* border: 1px solid #134D5C; */
+}
+
+.wwo-h2 {
+    font-size: 3rem;
+    color: #464646;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .wwo-icons-cont {
@@ -504,6 +539,17 @@ ul li {
         height: 50px;
         width: 50px;
         font-size: 25px;
+    }
+    .url {
+        width: 100%;
+        min-width: 0;
+        top: 0px;
+        right: -15px;
+        border-radius: 6px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        position: absolute;
+        overflow: hidden;
     }
     .wwo-row {
         min-height: 400px;
