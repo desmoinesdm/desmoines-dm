@@ -60,13 +60,13 @@ html * {
 }
 
 .cd-headline {
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 1.2;
+  font-weight: 700;
 }
 @media only screen and (min-width: 768px) {
   .cd-headline {
     font-size: 2.4rem;
-    font-weight: 300;
   }
 }
 @media only screen and (min-width: 1170px) {
@@ -294,7 +294,7 @@ xtype
   background-color: #aebcb9;
 }
 .cd-headline.type .cd-words-wrapper.waiting::after {
-  -webkit-animation: cd-pulse 1s infinite;
+  -webkit-animation: cd-pulse s infinite;
   -moz-animation: cd-pulse 1s infinite;
   animation: cd-pulse 1s infinite;
 }
@@ -411,14 +411,14 @@ xrotate-2
   opacity: 1;
 }
 .cd-headline.rotate-2 i.in {
-  -webkit-animation: cd-rotate-2-in 0.4s forwards;
-  -moz-animation: cd-rotate-2-in 0.4s forwards;
-  animation: cd-rotate-2-in 0.4s forwards;
+  -webkit-animation: cd-rotate-2-in 0.2s forwards;
+  -moz-animation: cd-rotate-2-in 0.2s forwards;
+  animation: cd-rotate-2-in 0.2s forwards;
 }
 .cd-headline.rotate-2 i.out {
-  -webkit-animation: cd-rotate-2-out 0.4s forwards;
-  -moz-animation: cd-rotate-2-out 0.4s forwards;
-  animation: cd-rotate-2-out 0.4s forwards;
+  -webkit-animation: cd-rotate-2-out 0.2s forwards;
+  -moz-animation: cd-rotate-2-out 0.2s forwards;
+  animation: cd-rotate-2-out 0.2s forwards;
 }
 .cd-headline.rotate-2 em {
   -webkit-transform: translateZ(20px);
@@ -585,9 +585,9 @@ xloading-bar
 }
 .cd-headline.loading-bar .cd-words-wrapper.is-loading::after {
   width: 100%;
-  -webkit-transition: width 3s;
-  -moz-transition: width 3s;
-  transition: width 3s;
+  -webkit-transition: width 1s;
+  -moz-transition: width 1s;
+  transition: width 1s;
 }
 .cd-headline.loading-bar b {
   top: .2em;
