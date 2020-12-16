@@ -137,6 +137,10 @@ a, a:hover {
     display: none;
 }
 
+.fourth-color {
+    color: #3269A1
+}
+
 h1, h2, h3, h4, h5, h6, p {
     font-family: 'Nunito', sans-serif;
     margin: 0;
@@ -167,17 +171,13 @@ h1, h2, h3 {
     border-radius: 6px;
 }
 
-.sandwich {
-    color: #134D5C;
-}
-
 .sec-color {
     color: #134D5C;
     /* color: #3269A1; */
 }
 
 .shadow {
-    box-shadow: 0 0 3px rgba(22,28,45,.15)!important;
+    box-shadow: 0 3px 5px #464646!important;
 }
 
 .text-ac {
@@ -382,7 +382,7 @@ ul li {
     margin-bottom: -70px;
     bottom: 0;
     left: 50px;
-    box-shadow: 3px -2px 5px -5px #0a4249;
+    box-shadow: 3px -2px 5px -5px #464646;
     z-index: 15;
     overflow: hidden;
 }
@@ -398,7 +398,7 @@ ul li {
     margin-bottom: -70px;
     bottom: 0;
     left: 250px;
-    box-shadow: 3px -2px 5px -5px #0a4249;
+    box-shadow: 3px -2px 5px -5px #464646;
     z-index: 10;
     overflow: hidden;
 }
@@ -414,7 +414,7 @@ ul li {
     margin-bottom: -70px;
     bottom: 0;
     right: 50px;
-    box-shadow: 1px -2px 2px #0a4249;
+    box-shadow: 10px -2px 10px -10px #464646;
     z-index: 5;
     overflow: hidden;
 }
@@ -471,7 +471,7 @@ ul li {
     border-radius: 180px;
     padding: 20px;
     margin-top: 120px;
-    box-shadow: 1px -2px 2px #0a4249;
+    box-shadow: 1px -2px 2px #464646;
     z-index: 5;
     display: flex;
     align-items: center;
@@ -634,7 +634,7 @@ ul li {
         border-radius: 180px;
         padding: 20px;
         margin-top: 60px;
-        box-shadow: 1px -2px 2px #0a4249;
+        box-shadow: 1px -2px 2px #464646;
         z-index: 5;
         display: flex;
         align-items: center;
