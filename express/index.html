@@ -35,20 +35,21 @@
     <header id="header" class="row header-cont">
         
             <a class="" href="#home">
-                <img src="./site/images/logo-green.png" id="header-logo" class="img-fluid" alt="Logo" />
+                <img id="header-img" src="./site/images/logo-green.png" class="img-fluid" alt="Logo" />
+                <img id="header-img-2" src="./site/images/logo-blue.png" class="img-fluid display-none" alt="Logo" />
             </a>
             <nav class="d-flex header-right-cont align-items-center">
                 <a class="" href="#who-we-are">
-                    <p class="header-right-text header-right-last sec-color">WHO WE ARE</p>
+                    <p class="header-right-text header-right-last">WHO WE ARE</p>
                 </a>
                 <a class="" href="#what-we-offer">
-                    <p class="header-right-text header-right-last sec-color">WHAT WE OFFER</p>
+                    <p class="header-right-text header-right-last">WHAT WE OFFER</p>
                 </a>
                 <a class="" href="#portfolio">
-                    <p class="header-right-text header-right-last sec-color">PORTFOLIO</p>
+                    <p class="header-right-text header-right-last">PORTFOLIO</p>
                 </a>
                 <a class="" href="#contact">
-                    <button type="button" class="btn btn-primary btn-lg">Contact</button>
+                    <button id="contact-button" type="button" class="btn btn-primary btn-lg">Contact</button>
                 </a>
             </nav>
 
@@ -73,16 +74,16 @@
                             <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link sec-color" href="#who-we-are">WHO WE ARE</a>
+                            <a class="nav-link" href="#who-we-are">WHO WE ARE</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link sec-color" href="#what-we-offer">WHAT WE OFFER</a>
+                            <a class="nav-link" href="#what-we-offer">WHAT WE OFFER</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link sec-color" href="#portfolio">PORTFOLIO</a>
+                            <a class="nav-link" href="#portfolio">PORTFOLIO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link sec-color" href="#contact">CONTACT</a>
+                            <a class="nav-link" href="#contact">CONTACT</a>
                         </li>
                     </ul>
                     <!-- Links -->
@@ -147,7 +148,7 @@
             <h5 class="third-color">With over 10 years of experience, we're a local development and marketing firm that you can trust.</h5>
             <br>
             <a class="slogan-button" href="#contact">
-                <button type="button" class="btn btn-sec btn-lg">Connect With Us.</button>
+                <button type="button" class="btn btn-sec btn-lg">Connect With Us</button>
             </a>
         </div>
         
@@ -270,24 +271,29 @@
     <!-- end of mobile -->
 
     <div class="row wwo-row col-padding">
-        <div class="col-md-6 mt-5">
+        <div class="col-md-6 mt-5" data-aos="fade-right">
             <h1 class="text-left w-100">Handwritten Code</h1>
             <h4 class="text-left w-100 wwo-h4">
                 We don't use template-based platforms like WordPress to build sites. Template-based sites come with a lot of prepackaged code that REALLY slows down your site.
 
-                <br>
-                <br>
+                <br><br>
 
                 We handwrite our code to ensure your site is fast, secure, compliant, and responsive.
+
+                <br><br>
+
+                <a class="slogan-button adj" href="#contact">
+                    <button type="button" class="btn btn-third btn-lg">Get a Free Quote</button>
+                </a>
             </h4>
         </div>
         <div class="col-md-1"></div>
-        <div class="col-md-5 mt-4">
+        <div class="col-md-5 mt-4" data-aos="fade-left">
             <img class="img-fluid img-br" src="./site/images/coding.jpg" alt="man coding"/>
         </div>
     </div>
     
-    <div class="row wwo-row col-padding pt-5">
+    <div class="row wwo-row-to-blue col-padding pt-5">
         <div class="col-md-12 col-center mt-5"> 
             <h1 class="text-left w-100">Search Engine Optimized</h1>
             <h4 class="text-left w-100 wwo-h4">Search engines like Google want to show sites in their search results that are relevant, mobile responsive, fast, secure, and compliant. We will optimize your site in these 5 critical areas to ensure your site has the best chance at showing up in search results.</h4>
@@ -307,7 +313,25 @@
         </div>
     </div>
 
-    <div class="row wwo-row col-padding pt-5">
+    <div id="fast" class="row wwo-row-blue col-padding pt-5 d-flex">
+        <div class="col-md-4 mt-5 mb-5"> 
+            <br><br>
+            <h1 class="text-left w-100">Did we say fast?</h1>
+            <h4 class="text-left w-100 wwo-h4">Your site will be optimized for speed. No slow load times.</h4>
+
+            <br><br>
+
+            <a class="slogan-button adj" href="#contact">
+                <button type="button" class="btn btn-fourth btn-lg">Get a Free Quote</button>
+            </a>
+        </div>
+        <div class="col-md-8 col-center" data-aos="fade-up" data-aos-offset="300" data-aos-duration="2000">
+            <img class="img-fluid rocket" src="./site/images/rocket.png" alt="rocket image"/>
+        </div>
+        
+    </div>
+
+    <div class="row wwo-row-blue col-padding pt-5">
         <div class="col-md-12 col-center mt-5"> 
             <h1 class="text-left w-100">Certified Secure</h1>
             <h4 class="text-left w-100 wwo-h4">We'll make sure your site is certified secure. Your URL will have a lock next to it signifying that your site has a secure connection. Visitors will trust that your site is safe.</h4>
@@ -318,9 +342,9 @@
         </div>
     </div>
 
-    <div class="row wwo-row col-padding">
+    <div class="row wwo-row-blue col-padding">
         <div class="col-md-12 col-center">
-            <h1 class="text-left w-100">Responsive Design</h1>
+            <h1 class="text-left w-100">Responsively Designed</h1>
             <h4 class="text-left w-100 wwo-h4">Your site will look great on all devices.</h4>
             <div class="phone absolute" data-aos="fade-right">
                 <img class="img-fluid" src="./site/images/phone.png" alt="phone image"/>
@@ -364,12 +388,12 @@
                 </a>
                 <h4 class="heading-text-align-center">Yuu Keyboard</h4>
             </div>
-            <div class="col-md-6">
+            <!-- <div class="col-md-6">
                 <a class="" target="_blank" href="http://reformation.testurl05.com/">
                     <img class="card img-fluid rounded shadow" src="./site/images/NewReformation.png" alt="New Reformation Movement Web Site Image">
                 </a>
                 <h4 class="heading-text-align-center">New Reformation Movement</h4>
-            </div>
+            </div> -->
         </div>
     </div>
     
@@ -406,6 +430,8 @@
     <script src="./animated-headline-master/js/jquery-2.1.1.js"></script>
     <script src="./animated-headline-master/js/main.js"></script>
 </body>
-<footer class="container-fluid"></footer>
+<footer class="container-fluid">
+    <!-- make sure to attribute icons to flaticon.com -->
+</footer>
 
 </html>
