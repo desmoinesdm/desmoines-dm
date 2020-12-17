@@ -44,12 +44,12 @@ window.onload = function() {
             sandwich.classList.remove("sec-color");
             sandwich.classList.add("primary-color");
         } else {
-            headerButton.classList.add("btn-primary-2");
+            // headerButton.classList.add("btn-primary-2");
             headerButton.classList.remove("btn-sec");
-            headerImgTwo.classList.remove("display-none");
+            // headerImgTwo.classList.remove("display-none");
             headerImgThree.classList.add("display-none");
-            sandwich.classList.add("fourth-color");
-            sandwich.classList.remove("sec-color");
+            // sandwich.classList.add("fourth-color");
+            // sandwich.classList.remove("sec-color");
             sandwich.classList.remove("primary-color");
         }
     }
