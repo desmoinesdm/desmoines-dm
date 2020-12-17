@@ -242,6 +242,11 @@ ul li {
     max-height: 50px;
 }
 
+#header-img-3 {
+    max-width: 50px;
+    max-height: 50px;
+}
+
 .header-right-cont {
     align-items: center;
 }
@@ -520,6 +525,16 @@ ul li {
 .wwo-row-blue {
     min-height: 600px;
     background-color: #3269A1;
+}
+
+.wwo-row-to-red {
+    min-height: 600px;
+    background: linear-gradient(to bottom, #3269A1 0%, #D14243 100%);
+}
+
+.wwo-row-red {
+    min-height: 600px;
+    background-color: #D14243;
 }
 
 .wwo-h2 {
