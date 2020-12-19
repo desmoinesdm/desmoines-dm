@@ -23,7 +23,11 @@
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="./animated-headline-master/css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="./animated-headline-master/css/style.css"> <!-- Resource style -->
-	<script src="./animated-headline-master/js/modernizr.js"></script> <!-- Modernizr -->
+    <script src="./animated-headline-master/js/modernizr.js"></script> <!-- Modernizr -->
+    
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
     <!-- CSS and JS -->
     <link rel="stylesheet" href="index.css">
@@ -401,9 +405,31 @@
         <div class="col-md-12 mt-5 mb-5"> 
             <br><br>
             <h1 class="text-center w-100">CONTACT US</h1>
-
+            
             <br><br>
-            <div class="row">
+            <form id="sendMail">
+                <div>
+                  <label for="name">Name: </label>
+                  <input name="name" id="name" placeholder="Name">
+                </div>
+                <div>
+                  <label for="email">Email: </label>
+                  <input name="email" id="email" placeholder="Email">
+                </div>
+                <div>
+                    <label for="phone">Phone: </label>
+                    <input name="phone" id="phone" placeholder="Phone">
+                  </div>
+                <div>
+                    <label for="subject">Message: </label>
+                    <input name="subject" id="subject" placeholder="How can we help you?">
+                </div>
+                <div>
+                  <input type="submit">Send Message</input>
+                </div>
+            </form>         
+            
+            <!-- <div class="row">
                 <div class="col-md-6 d-flex align-items-center justify-content-center contact">
                     <i class="fas fa-envelope skills"></i>
                     <h3 class="contact-text">DesMoinesDM@gmail.com</h3>
@@ -412,9 +438,29 @@
                     <i class="fas fa-phone skills"></i>
                     <h3 class="contact-text">(515) 418-6790</h3>
                 </div>
-            </div>           
+            </div>            -->
         </div>        
     </div>
+
+    <script>
+        document.getElementById("sendMail").addEventListener('submit', sendMail);
+
+        function sendMail(e) {
+            e.preventDefault();
+
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let phone = document.getElementById("phone").value;
+            let subject = document.getElementById("subject").value;
+
+            // try to add this to the server and user the server ip address
+
+            axios
+                .post("http://localhost:4040/api/contact", {name: name, email: email, phone: phone, subject: subject})
+                .then(res => console.log("res: ", res))
+                .catch(err => console.log("err: ", err))
+        }
+    </script>
         
     <!-- images must be 2700 x 1300 -->
 
@@ -454,22 +500,6 @@
             </div>
         </div>
     </div> -->
-    
-    <!-- <a name="contact"></a>
-    <div class="anchor-tag"></div>
-    <div class="row">
-        <h4 class="heading-text-align-center third-color">Contact</h4>
-        <div class="container row-port shadow rounded">
-            <div class="col-md-6 d-flex align-items-center justify-content-center contact">
-                <i class="fas fa-envelope skills"></i>
-                <h3 class="contact-text">DesMoinesDM@gmail.com</h3>
-            </div>
-            <div class="col-md-6 d-flex align-items-center justify-content-center contact">
-                <i class="fas fa-phone skills"></i>
-                <h3 class="contact-text">(515) 418-6790</h3>
-            </div>
-        </div>
-    </div>       -->
 
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
