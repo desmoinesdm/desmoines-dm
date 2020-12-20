@@ -2,6 +2,7 @@
   "name": "des-moines-dm",
   "version": "1.0.0",
   "description": "Des Moines Development and Marketing",
+  "private": true,
   "main": "server.js",
   "proxy": "http://localhost:4040",
   "dependencies": {
@@ -13,9 +14,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "dev": "parcel express/index.html",
-    "build": "parcel build express/index.html"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",

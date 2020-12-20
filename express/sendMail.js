@@ -10,7 +10,7 @@ function sendMail(e) {
 
     console.log("sendMail fired!", name, email, phone, subject);
 
-    fetch('http://localhost:4040/api/contact', {
+    fetch('/api/contact', {
         method: 'POST', 
         headers: {
           'Accept': 'application/json, text/plain, */*',

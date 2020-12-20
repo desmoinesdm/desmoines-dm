@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.static("express"));
 
 // default URL for website
-app.use('/', function(req,res){
+app.get('/', function(req,res){
     res.sendFile(path.join(__dirname+'/express/index.html'));
     //__dirname : It will resolve to your project folder.
   });
@@ -45,6 +45,7 @@ app.post('/api/contact', async(req, res, next) => {
   });
 
   console.log('Message sent: %s', mailOptions.messageId);
+  // console.log('Preview URL: %s', nodemailer.getTestMessageUrl(mailOptions))
 
   let mailOptions2 = await transporter.sendMail({
     from: `info@desmoinesdm.com`,
