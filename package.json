@@ -2,7 +2,8 @@
   "name": "des-moines-dm",
   "version": "1.0.0",
   "description": "Des Moines Development and Marketing",
-  "main": "package.js",
+  "main": "server.js",
+  "proxy": "http://localhost:4040",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
