@@ -1,0 +1,12 @@
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*# sourceMappingURL=/reset.844bd9d4.css.map */

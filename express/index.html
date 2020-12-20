@@ -24,10 +24,6 @@
 	<link rel="stylesheet" href="./animated-headline-master/css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="./animated-headline-master/css/style.css"> <!-- Resource style -->
     <script src="./animated-headline-master/js/modernizr.js"></script> <!-- Modernizr -->
-    
-    <!-- axios -->
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
     <!-- CSS and JS -->
     <link rel="stylesheet" href="index.css">
@@ -442,25 +438,7 @@
         </div>        
     </div>
 
-    <script>
-        document.getElementById("sendMail").addEventListener('submit', sendMail);
-
-        function sendMail(e) {
-            e.preventDefault();
-
-            let name = document.getElementById("name").value;
-            let email = document.getElementById("email").value;
-            let phone = document.getElementById("phone").value;
-            let subject = document.getElementById("subject").value;
-
-            // try to add this to the server and user the server ip address
-
-            axios
-                .post("http://localhost:4040/api/contact", {name: name, email: email, phone: phone, subject: subject})
-                .then(res => console.log("res: ", res))
-                .catch(err => console.log("err: ", err))
-        }
-    </script>
+    <script src="sendMail.js"></script>
         
     <!-- images must be 2700 x 1300 -->
 

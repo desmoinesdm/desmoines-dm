@@ -1,0 +1,28 @@
+{
+  "name": "des-moines-dm",
+  "version": "1.0.0",
+  "description": "Des Moines Development and Marketing",
+  "main": "package.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodejs": "^0.0.0",
+    "nodemailer": "^6.4.17"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "parcel express/index.html",
+    "build": "parcel build express/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/desmoinesdm/desmoines-dm.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/desmoinesdm/desmoines-dm/issues"
+  },
+  "homepage": "https://github.com/desmoinesdm/desmoines-dm#readme"
+}

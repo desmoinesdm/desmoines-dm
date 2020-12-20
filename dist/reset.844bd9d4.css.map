@@ -1,0 +1,1 @@
+{"version":3,"sources":["animated-headline-master/css/reset.css"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA","file":"reset.844bd9d4.css","sourceRoot":"../express","sourcesContent":["\nblockquote:before, blockquote:after,\nq:before, q:after {\n\tcontent: '';\n\tcontent: none;\n}\ntable {\n\tborder-collapse: collapse;\n\tborder-spacing: 0;\n}"]}
