@@ -45,7 +45,6 @@ app.post('/api/contact', async(req, res, next) => {
   });
 
   console.log('Message sent: %s', mailOptions.messageId);
-  // console.log('Preview URL: %s', nodemailer.getTestMessageUrl(mailOptions))
 
   let mailOptions2 = await transporter.sendMail({
     from: `info@desmoinesdm.com`,
@@ -62,7 +61,6 @@ app.post('/api/contact', async(req, res, next) => {
 
   res.send('Email sent!')   
 })
-
 
 server.listen(port);
 
