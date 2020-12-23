@@ -333,6 +333,42 @@ ul li {
     font-size: 1.5rem;
 }
 
+.contact-button {
+    background-color: #3269A1;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border: 0;
+    border-radius: 30px;
+    outline: 0;
+    padding: 10px 60px;
+    margin: 15px 0;
+}
+
+.contact-input {
+    width: 30%;
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 15px;
+    outline: 0;
+    margin: 15px 0;
+}
+
+.contact-textarea {
+    width: 100%;
+    min-height: 125px;
+    resize: none;
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 15px;
+    outline: 0;
+    margin: 15px 0;
+}
+
+.contact-upper-cont {
+    flex-wrap: wrap;
+}
+
 .hd {
     bottom: 50px;
     left: 15px;
@@ -597,6 +633,9 @@ ul li {
         font-size: 1.5rem;
         justify-content: left !important;
         margin-bottom: 20px;
+    }
+    .contact-input {
+        width: 100%;
     }
     .contact-text {
         font-size: 1.35rem;

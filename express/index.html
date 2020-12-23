@@ -398,30 +398,22 @@
 
     <!--  -->
     <div id="contact" class="row wwo-row-red col-padding pt-5 d-flex">
-        <div class="col-md-12 mt-5 mb-5"> 
+        <div class="col-md-12 mt-5 mb-5 col-center"> 
             <br><br>
             <h1 class="text-center w-100">CONTACT US</h1>
             
             <br><br>
-            <form id="sendMail">
-                <div>
-                  <label for="name">Name: </label>
-                  <input name="name" id="name" placeholder="Name">
+            <form class="row w-75 justify-content-center" id="sendMail">
+                <div class="d-flex w-100 justify-content-between contact-upper-cont">
+                    <input class="contact-input" name="name" id="name" placeholder="Name">
+                    <input class="contact-input" name="email" id="email" type="email" placeholder="Email">
+                    <input class="contact-input" name="phone" id="phone" placeholder="Phone">
                 </div>
+            
+                <textarea class="col-md-12 contact-textarea" class="w-100" name="subject" id="subject" placeholder="How can we help you?"></textarea>
+            
                 <div>
-                  <label for="email">Email: </label>
-                  <input name="email" id="email" placeholder="Email">
-                </div>
-                <div>
-                    <label for="phone">Phone: </label>
-                    <input name="phone" id="phone" placeholder="Phone">
-                  </div>
-                <div>
-                    <label for="subject">Message: </label>
-                    <input name="subject" id="subject" placeholder="How can we help you?">
-                </div>
-                <div>
-                  <input type="submit">Send Message</input>
+                  <input class="contact-button" type="submit" value="Send" />
                 </div>
             </form>         
             
