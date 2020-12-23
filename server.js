@@ -40,7 +40,7 @@ app.post('/api/contact', async(req, res, next) => {
           `${name}, \n\n` +
           `Thank you for contacting Des Moines Development and Marketing! A representative will contact you within 2 business days. \n\n` +
           `If you have any further question, feel free to email us at:  \n\n` +
-          `info@desmoinesdm.com \n\n` +
+          `dillon@desmoinesdm.com \n\n` +
           `- Des Moines Development & Marketing Automated Message`
   });
 
