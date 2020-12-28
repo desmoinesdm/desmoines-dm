@@ -226,7 +226,7 @@ ul li {
 }
 
 .header-cont {
-    /* display: none; */
+    display: none;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
