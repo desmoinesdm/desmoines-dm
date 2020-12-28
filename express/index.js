@@ -14,10 +14,10 @@ window.onload = function() {
     function addHeaderBorder() {
         if (window.pageYOffset > 300) {
             header.classList.add("header-box-shadow");
-            // adj.forEach(e => e.classList.add("adjust"));
+            adj.forEach(e => e.classList.add("adjust"));
         } else {
             header.classList.remove("header-box-shadow");
-            // adj.forEach(e => e.classList.remove("adjust"));
+            adj.forEach(e => e.classList.remove("adjust"));
         }
 
         if(window.pageYOffset > fastOffset) {
