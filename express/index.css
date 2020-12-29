@@ -333,6 +333,18 @@ ul li {
     font-size: 1.5rem;
 }
 
+.contact-h1-letter {
+    margin-right: 1px;
+}
+
+.contact-h1-letter-2 {
+    margin-right: 2px;
+}
+
+.contact-h1-letter-3 {
+    margin-right: 4px;
+}
+
 .contact-button {
     background-color: #3269A1;
     color: #fff;
@@ -573,6 +585,11 @@ ul li {
     background-color: #D14243;
 }
 
+.wwo-row-red-last {
+    min-height: 800px;
+    background-color: #D14243;
+}
+
 .wwo-h2 {
     font-size: 3rem;
     color: #464646;
@@ -730,6 +747,10 @@ ul li {
 
 footer {
     height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 20px;
 }
 
 /* End of Footer */

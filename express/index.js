@@ -1,8 +1,10 @@
 window.onload = function() { 
     window.onscroll = function() { addHeaderBorder() };
     var header = document.getElementById("header");
+    var contact = document.getElementById("contact");
     var fastOffset = $("#fast").offset().top - 250;
     var appsOffset = $("#apps").offset().top - 250;
+    var contactOffset = $("#contact").offset().top;
     var headerButton = document.getElementById("contact-button");
     var headerImg = document.getElementById("header-img");
     var headerImgTwo = document.getElementById("header-img-2");
@@ -15,7 +17,7 @@ window.onload = function() {
         if (window.pageYOffset > 300) {
             header.classList.add("header-box-shadow");
             adj.forEach(e => e.classList.add("adjust"));
-        } else {
+        } else if(window.pageYOffset < 300) {
             header.classList.remove("header-box-shadow");
             adj.forEach(e => e.classList.remove("adjust"));
         }
@@ -44,13 +46,15 @@ window.onload = function() {
             sandwich.classList.remove("sec-color");
             sandwich.classList.add("primary-color");
         } else {
-            // headerButton.classList.add("btn-primary-2");
             headerButton.classList.remove("btn-sec");
-            // headerImgTwo.classList.remove("display-none");
             headerImgThree.classList.add("display-none");
-            // sandwich.classList.add("fourth-color");
-            // sandwich.classList.remove("sec-color");
             sandwich.classList.remove("primary-color");
+        }
+
+        if(window.pageYOffset > contactOffset) {
+            header.classList.remove("header-box-shadow");
+        } else if(window.pageYOffset < contactOffset && window.pageYOffset > 300) {
+            header.classList.add("header-box-shadow");
         }
     }
 
